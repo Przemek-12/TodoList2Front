@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+    <meta name="author" content="przemyslaw.chlebek">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/basicStyles.css">
+    <link rel="stylesheet" href="css/valhallaStyles.css">
+    <script src="script/valhallaScript.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Valhalla</title>
+</head>
+<body>
+    <div class='background' id='background'></div>
+    <section id='section1'>       
+        <div><a href="index.html">Main Page</a></div>
+        <div id="editForm">
+            <form>
+                <label>Edit todo</label>
+                <input type='text' id='editDate' name='date' placeholder="date">
+                <input type='text' id='editText' name='text' placeholder="text">
+                <button id='updateTodoBtn' type="submit" value="updateTodo">Update</button>              
+            </form>
+        </div>
+        <form>
+            <label>Add todo</label>
+            <input type='text' id='date' name='date' placeholder="date">
+            <input type='text' id='text' name='text' placeholder="text">
+            <button id='addTodoBtn' type="submit" value="addTodo">Add</button>              
+        </form>
+        <table id="table1">
+             <tr>
+                <td>date</td>
+                <td>text</td>
+              </tr>         
+        </table>   
+    </section>
+</body>
+</html>
