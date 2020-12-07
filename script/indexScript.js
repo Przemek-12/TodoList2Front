@@ -15,7 +15,7 @@ window.addEventListener('load', ()=>{
     loginBtn.addEventListener('click', ()=>{
         axios({
             method: 'post',
-            url: 'http://localhost:8080/user/login',
+            url: 'https://acvalhallaapp.herokuapp.com/user/login',
             data: {
               login: loginInput.value,
               password: passwordInput.value
@@ -33,7 +33,7 @@ window.addEventListener('load', ()=>{
     registerBtn.addEventListener('click', ()=>{
         axios({
             method: 'post',
-            url: 'http://localhost:8080/user/register',
+            url: 'https://acvalhallaapp.herokuapp.com/user/register',
             data: {
               login: loginInput.value,
               password: passwordInput.value

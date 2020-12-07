@@ -22,7 +22,7 @@ window.addEventListener('load', ()=>{
       function getListRequest(){
         axios({
             method: 'get',
-            url: 'http://localhost:8080/todo',
+            url: 'https://acvalhallaapp.herokuapp.com/todo',
             params: {
               userId: localStorage.getItem('userId')
             }
@@ -39,7 +39,7 @@ window.addEventListener('load', ()=>{
       function addToDoRequest(){
         axios({
             method: 'post',
-            url: 'http://localhost:8080/todo',
+            url: 'https://acvalhallaapp.herokuapp.com/todo',
             data: {
                 date: document.getElementById("date").value,
                 text: document.getElementById("text").value,
@@ -104,7 +104,7 @@ window.addEventListener('load', ()=>{
       function deleteRequest(todoId){
         axios({
             method: 'delete',
-            url: 'http://localhost:8080/todo',
+            url: 'https://acvalhallaapp.herokuapp.com/todo',
             params: {
                 userId: localStorage.getItem('userId'),
                 todoId: todoId
@@ -130,7 +130,7 @@ window.addEventListener('load', ()=>{
       function updateRequest(){
         axios({
             method: 'put',
-            url: 'http://localhost:8080/todo',
+            url: 'https://acvalhallaapp.herokuapp.com/todo',
             data: {
                 id: todoId,
                 date: document.getElementById("editDate").value,
